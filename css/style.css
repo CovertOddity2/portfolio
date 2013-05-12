@@ -1,0 +1,131 @@
+/* #Custom Style
+================================================== */
+
+body {
+    background-image: url('img/bodyBG.png');
+}
+
+#header-wrapper:before {
+    background: url('img/bodyBG.png');
+    opacity: 0.5;
+    box-shadow: inset 0 -60 40 0 #ffffff;
+}
+
+#header-wrapper {
+    background: #ffffff;
+    border-bottom: solid 1px #ccc;
+}
+
+#header-wrapper:after {
+    background: url('img/fadeOut.png');
+    background-size: 100% 100%;
+    opacity: 0.25;
+}
+
+#nav {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+#nav > ul > li {
+    font-style: italic;
+}
+
+#nav > ul > li > a {
+    border-radius: 5px;
+    color: #5d5d5d;
+    text-decoration: none;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -o-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    outline: 0;
+}
+
+#nav > ul > li:hover > a {
+    background: #f3f3f3;
+}
+
+#nav > ul > li.active > a {
+    background: #f3f3f3;
+}
+
+#nav > ul > li.current_page_item > a {
+    background: #d52349;
+    color: #fff !important;
+    font-weight: 700;
+}
+
+#footer-wrapper:before {
+    background: url('img/bodyBG.png');
+    background-size: 100% 100%;
+    opacity: 0.5;
+}
+
+#footer-wrapper {
+    background: transparent;
+    color: #858484;
+}
+
+#footer-wrapper:after {
+    background: url('img/fadeOut.png');
+    background-size: 100% 100%;
+    opacity: 0.25;
+}
+
+#footer-wrapper a {
+    color: #c5c4c4;
+}
+
+#footer-wrapper h2,
+#footer-wrapper h3,
+#footer-wrapper h4,
+#footer-wrapper h5,
+#footer-wrapper h6,
+#footer-wrapper strong,
+#footer-wrapper b {
+    color: #fff;
+}
+
+#footer-wrapper h1 a,
+#footer-wrapper h2 a,
+#footer-wrapper h3 a,
+#footer-wrapper h4 a,
+#footer-wrapper h5 a,
+#footer-wrapper h6 a {
+    color: inherit;
+}
+
+#footer-wrapper ul.contact li {
+    border-top-color: #353434;
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+#footer-wrapper ul.dates li {
+    border-top-color: #353434;
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+#footer-wrapper ul.divided li {
+    border-top-color: #353434;
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+/* #Custom classes
+================================================== */
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}

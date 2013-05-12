@@ -1,0 +1,108 @@
+/* #Custom Layout
+================================================== */
+
+body {
+    height: 100%; /* make body take up the whole given screen */
+}
+
+#header-main-container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -175px; /* the same as header height */
+}
+
+#header-wrapper:before {
+    height: 7.5em;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#header-wrapper {
+    padding: 7.5em 0 3em 0;
+    position: relative;
+    height: 120px;
+}
+
+#header-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+#nav > ul {
+    margin: 0;
+}
+
+#nav > ul > li > ul {
+    display: none;
+}
+
+#nav > ul > li {
+    display: inline-block;
+    margin: 0 0.35em 0 0.35em;
+}
+
+#nav > ul > li > a {
+    border-radius: 5px;
+    padding: 0.6em 1.2em 0.6em 1.2em;
+}
+
+#main-wrapper {
+    padding: 15px;
+}
+
+#footer-wrapper:before {
+    height: 7.5em;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#footer-wrapper {
+    height: 175px;
+    position: relative;
+}
+
+#footer-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+/* #Custom classes
+================================================== */
+
+.push-footer {
+    height: 175px;
+}
+
+/* must be the same size as footer */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
