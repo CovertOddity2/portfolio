@@ -334,11 +334,11 @@
                     if (target.length < 1) {
                         e.preventDefault();
                     } else {
-                        e.stopPropagation();
                         e.preventDefault();
+                        e.stopPropagation();
                         var target = a.attr('href');
                         // fade out the page before folowing link
-                        $('#pageloader').fadeOut('slow', function () {
+                        $('#pageloader').fadeOut(1000, function () {
                             document.location = target;
                         });
                     }

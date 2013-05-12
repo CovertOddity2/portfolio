@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $('#pageloader').fadeIn('slow');
+    $('#pageloader').fadeIn(1000);
 });

@@ -17,7 +17,8 @@
 }
 
 body {
-    font-family: 'Source Sans Pro';
+    font-family: 'Noto Serif', serif;
+    /*font-family: 'Quando', serif;*/
     font-weight: 300;
     background: #252122 url('images/bg02.png');
     color: #5d5d5d;
