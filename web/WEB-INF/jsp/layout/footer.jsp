@@ -31,6 +31,7 @@
                     </div>
                     <div class="row">
                         <div class="8u">
+                            ${testMessage}
                             <!--<section>
                                 <header>
                                     <h2>Links</h2>

@@ -33,4 +33,14 @@
           class="org.springframework.web.servlet.view.UrlBasedViewResolver"
           p:viewClass="org.springframework.web.servlet.view.tiles2.TilesView" />
     
+    <!-- Services -->
+    <bean id="newsService" class="com.pietervaneeckhout.service.NewsServiceImpl" />
+    <bean id="personaliaService" class="com.pietervaneeckhout.service.PersonaliaServiceImpl" />
+    <bean id="portfolioService" class="com.pietervaneeckhout.service.PortfolioServiceImpl" />
+    <bean id="socialMediaService" class="com.pietervaneeckhout.service.SocialMediaServiceImpl" />
+    
+    <!-- Delegate Controllers -->
+    <bean id="footerDelegate" class="com.pietervaneeckhout.controller.delegates.FooterDelegate" />
+    <bean id="headerDelegate" class="com.pietervaneeckhout.controller.delegates.HeaderDelegate" />
+    
 </beans>
