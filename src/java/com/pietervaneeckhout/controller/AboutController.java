@@ -10,14 +10,14 @@ import org.springframework.web.servlet.ModelAndView;
  * @author pveeckhout
  */
 @Controller
-public class IndexController {
-    
-    private ModelAndView indexView;
-    
-    @RequestMapping(value = {"/index" , "/"} )
-    public ModelAndView showIndex() {
-        indexView = new ModelAndView("index");
+public class AboutController {
+
+    private ModelAndView aboutView;
+
+    @RequestMapping(value = {"/about"})
+    public ModelAndView showAbout() {
+        aboutView = new ModelAndView("about");
         
-        return indexView;
+        return aboutView;
     }
 }

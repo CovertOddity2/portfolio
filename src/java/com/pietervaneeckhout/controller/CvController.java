@@ -10,14 +10,15 @@ import org.springframework.web.servlet.ModelAndView;
  * @author pveeckhout
  */
 @Controller
-public class IndexController {
+public class CvController {
     
-    private ModelAndView indexView;
+    private ModelAndView cvView;
+
     
-    @RequestMapping(value = {"/index" , "/"} )
-    public ModelAndView showIndex() {
-        indexView = new ModelAndView("index");
+    @RequestMapping(value = {"/cv"})
+    public ModelAndView showAbout() {
+        cvView = new ModelAndView("cv");
         
-        return indexView;
+        return cvView;
     }
 }

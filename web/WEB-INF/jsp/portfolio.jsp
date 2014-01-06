@@ -8,20 +8,21 @@
                     </header>
                     <div>
                         <div class="row">
-                            <div id="neural-network-captcha-solver" class="4u">
+                            <div id="bachelor-paper" class="4u">
                                 <section class="box">
-                                    <a href="#neural-network-captcha-solver" class="image image-full"><img
+                                    <a href="#bachelor-paper" class="image image-full"><img
                                             src="images/neural-network.jpg" alt=""/></a>
                                     <header>
-                                        <h3>Neural Network CAPTCHA Solving</h3>
+                                        <h3>Bachelor paper</h3>
                                     </header>
                                     <p>
-                                        This is the supporting project I made to support and test my thesis paper
-                                        about Solving CAPTCHA using neural networks. Also contains a CAPTCHA
-                                        generating framework.
+                                        This thesis is divided into several parts, 
+                                        The thesis starts out by researching what CAPTCHAs are. 
+                                        After that the thesis focuses on what neural networks are and how they function.
+                                        Lastly an experimental implementation is tested and discussed.
                                     </p>
                                     <footer>
-                                        <a href="https://bitbucket.org/CovertOddity2/neuralnetwork-captcha-solving"
+                                        <a href="https://github.com/pveeckhout/bachelor-thesis"
                                            class="button button-alt" target="_blank">Source and info</a>
                                     </footer>
                                 </section>
@@ -36,7 +37,7 @@
                                     <p>
                                         This project was created as a test to see if it was possible to create a
                                         library containing a generic implementation of almost all design patterns
-                                        implemented in Java.<br/>
+                                        implemented in Java. This is already kind of old and possibly outdated.<br/>
                                     </p>
                                     <footer>
                                         <a href="https://bitbucket.org/endQuirks/jdesignpatterns"
@@ -46,17 +47,44 @@
                             </div>
                             <div id="site" class="4u">
                                 <section class="box">
-                                    <a href="#" class="image image-full"><img src="images/website.jpg" alt=""/></a>
+                                    <a href="#site" class="image image-full"><img src="images/website.jpg" alt=""/></a>
                                     <header>
                                         <h3>This site</h3>
                                     </header>
                                     <p>
-                                        This site is my firts attempt at building a HTML5 + CSS3 + JavaScript
-                                        website.<br/>
-                                        I do like the new opportunities created by this new technology.
+                                        This site has gone through several reworks. First it was a pure HTML5 site,
+                                        a few reworks later this site is now running on the java Spring framework.
+                                        <br />
+                                        The implementation of the tiles framework did introduce an easier to manage site.
                                     </p>
                                     <footer>
-                                        <a href="#" class="button button-alt">Find out more</a>
+                                        <a href="https://github.com/pveeckhout/portfolio" class="button button-alt">source</a>
+                                    </footer>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="filler" class="4u">
+                                
+                            </div>
+                            <div id="waypoint-converter" class="4u">
+                                <section class="box">
+                                    <a href="#waypoint-converter" class="image image-full"><img
+                                            src="images/waypoint-converter.jpg" alt=""/></a>
+                                    <header>
+                                        <h3>waypoint-converter</h3>
+                                    </header>
+                                    <p>
+                                        This is a waypoint converter ii coded for my father. 
+                                        It converts coordinates generated by mapsource to a coordinate list
+                                        file that can be used with our cars' build-in GPS system.
+                                        <br />
+                                        development has stagnated as the program functions well enough for our use. 
+                                        If new feature requests or bugfixes are submitted, I would implement them as soon as possible
+                                    </p>
+                                    <footer>
+                                        <a href="https://github.com/pveeckhout/WaypointConverter"
+                                           class="button button-alt" target="_blank">Source and info</a>
                                     </footer>
                                 </section>
                             </div>
