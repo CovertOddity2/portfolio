@@ -31,12 +31,6 @@
                                 </c:if> >
                                 <a href="cv.htm">Curriculum Vitae</a>
                             </li>
-                            <li id="contact"
-                                <c:if test="${viewName == 'contact'}" >
-                                    class="current_page_item"
-                                </c:if> >
-                                <a href="contact.htm">Contact</a>
-                            </li>
                         </ul>
                     </nav>
                 </section>

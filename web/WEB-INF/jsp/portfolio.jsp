@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div id="main-wrapper">
     <div class="container">
         <div id="portfolioDiv" class="row">
@@ -7,87 +8,32 @@
                         <h2>Portfolio</h2>
                     </header>
                     <div>
+                        <c:set var="count" value="0" scope="page" />
                         <div class="row">
-                            <div id="bachelor-paper" class="4u">
-                                <section class="box">
-                                    <a href="#bachelor-paper" class="image image-full"><img
-                                            src="images/neural-network.jpg" alt=""/></a>
-                                    <header>
-                                        <h3>Bachelor paper</h3>
-                                    </header>
-                                    <p>
-                                        This thesis is divided into several parts, 
-                                        The thesis starts out by researching what CAPTCHAs are. 
-                                        After that the thesis focuses on what neural networks are and how they function.
-                                        Lastly an experimental implementation is tested and discussed.
-                                    </p>
-                                    <footer>
-                                        <a href="https://github.com/pveeckhout/bachelor-thesis"
-                                           class="button button-alt" target="_blank">Source and info</a>
-                                    </footer>
-                                </section>
-                            </div>
-                            <div id="jpatterns" class="4u">
-                                <section class="box">
-                                    <a href="#jpatterns" class="image image-full"><img src="images/jDesign.jpg"
-                                                                                       alt=""/></a>
-                                    <header>
-                                        <h3>jDesignPatterns</h3>
-                                    </header>
-                                    <p>
-                                        This project was created as a test to see if it was possible to create a
-                                        library containing a generic implementation of almost all design patterns
-                                        implemented in Java. This is already kind of old and possibly outdated.<br/>
-                                    </p>
-                                    <footer>
-                                        <a href="https://bitbucket.org/endQuirks/jdesignpatterns"
-                                           class="button button-alt" target="_blank">Source and info</a>
-                                    </footer>
-                                </section>
-                            </div>
-                            <div id="site" class="4u">
-                                <section class="box">
-                                    <a href="#site" class="image image-full"><img src="images/website.jpg" alt=""/></a>
-                                    <header>
-                                        <h3>This site</h3>
-                                    </header>
-                                    <p>
-                                        This site has gone through several reworks. First it was a pure HTML5 site,
-                                        a few reworks later this site is now running on the java Spring framework.
-                                        <br />
-                                        The implementation of the tiles framework did introduce an easier to manage site.
-                                    </p>
-                                    <footer>
-                                        <a href="https://github.com/pveeckhout/portfolio" class="button button-alt">source</a>
-                                    </footer>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div id="filler" class="4u">
-                                
-                            </div>
-                            <div id="waypoint-converter" class="4u">
-                                <section class="box">
-                                    <a href="#waypoint-converter" class="image image-full"><img
-                                            src="images/waypoint-converter.jpg" alt=""/></a>
-                                    <header>
-                                        <h3>waypoint-converter</h3>
-                                    </header>
-                                    <p>
-                                        This is a waypoint converter ii coded for my father. 
-                                        It converts coordinates generated by mapsource to a coordinate list
-                                        file that can be used with our cars' build-in GPS system.
-                                        <br />
-                                        development has stagnated as the program functions well enough for our use. 
-                                        If new feature requests or bugfixes are submitted, I would implement them as soon as possible
-                                    </p>
-                                    <footer>
-                                        <a href="https://github.com/pveeckhout/WaypointConverter"
-                                           class="button button-alt" target="_blank">Source and info</a>
-                                    </footer>
-                                </section>
-                            </div>
+                            <c:forEach var="portfolioItem" items="${portfolioList}" >
+                                <div id="${portfolioItem.title}" class="4u">
+                                    <section class="box">
+                                        <a href="#" class="image image-full">
+                                            <img src="./images/${portfolioItem.imageLocation}" alt="${portfolioItem.title}"/>
+                                        </a>
+                                        <header>
+                                            <h3>${portfolioItem.title}</h3>
+                                        </header>
+                                        <p>
+                                            ${portfolioItem.content}
+                                        </p>
+                                        <footer>
+                                            <a href="${portfolioItem.link}"
+                                               class="button button-alt" target="_blank">${portfolioItem.buttonText}</a>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <c:set var="count" value="${count + 1}" scope="page"/>
+                                <c:if test="${count % 3 == 0}" >
+                                </div>
+                                <div class="row">
+                                </c:if>
+                            </c:forEach>
                         </div>
                     </div>
                 </section>

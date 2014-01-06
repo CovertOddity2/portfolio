@@ -1,17 +1,40 @@
-<%-- 
-    Document   : cv
-    Created on : Jan 6, 2014, 2:27:24 AM
-    Author     : pveeckhout
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<div id="main-wrapper">
+    <div class="container">
+        <div id="aboutDiv" class="row">
+            <div class="12u">
+                <section>
+                    <header class="major">
+                        <h2>Curriculum Vitae</h2>
+                    </header>
+                    <div>
+                        <div class="row">
+                            <div class="12u">
+                                <section class="box">
+                                    <p>
+                                        My CV is written in dutch, but an english
+                                        version can be found on github. This english
+                                        version most probably is not up to date.
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="6u">
+                                <section class="box">
+                                        <a href="${cvURL}"
+                                           class="button button-alt" target="_blank">View online</a>
+                                </section>
+                            </div>
+                            <div class="6u">
+                                <section class="box">
+                                        <a href="${gitURL}"
+                                           class="button button-alt" target="_blank">Get via Github</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

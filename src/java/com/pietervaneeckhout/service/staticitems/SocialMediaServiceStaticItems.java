@@ -4,14 +4,15 @@
  * and open the template in the editor.
  */
 
-package com.pietervaneeckhout.service;
+package com.pietervaneeckhout.service.staticitems;
 
 import com.pietervaneeckhout.model.SocialMediaItem;
+import com.pietervaneeckhout.service.SocialMediaService;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class SocialMediaServiceImpl implements SocialMediaService {
+public class SocialMediaServiceStaticItems implements SocialMediaService {
 
     @Override
     public List<SocialMediaItem> getSocialmediaItems() {

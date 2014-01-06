@@ -34,10 +34,11 @@
           p:viewClass="org.springframework.web.servlet.view.tiles2.TilesView" />
     
     <!-- Services -->
-    <bean id="newsService" class="com.pietervaneeckhout.service.NewsServiceImpl" />
-    <bean id="personaliaService" class="com.pietervaneeckhout.service.PersonaliaServiceImpl" />
-    <bean id="portfolioService" class="com.pietervaneeckhout.service.PortfolioServiceImpl" />
-    <bean id="socialMediaService" class="com.pietervaneeckhout.service.SocialMediaServiceImpl" />
+    <bean id="newsService" class="com.pietervaneeckhout.service.staticitems.NewsServiceStaticItems" />
+    <bean id="personaliaService" class="com.pietervaneeckhout.service.staticitems.PersonaliaServiceStaticItems" />
+    <bean id="portfolioService" class="com.pietervaneeckhout.service.staticitems.PortfolioServiceStaticItems" />
+    <bean id="socialMediaService" class="com.pietervaneeckhout.service.staticitems.SocialMediaServiceStaticItems" />
+    <bean id="cvService" class="com.pietervaneeckhout.service.staticitems.CvServiceStaticItems" />
     
     <!-- Delegate Controllers -->
     <bean id="footerDelegate" class="com.pietervaneeckhout.controller.delegates.FooterDelegate" />

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <footer>
     <div id="footer-wrapper">
         <section id="footer" class="container">
@@ -10,28 +11,19 @@
                                     <h2>News and updates</h2>
                                 </header>
                                 <ul class="dates">
-                                    <li>
-                                        <span class="date">Junari <strong>6</strong></span>
-                                        <h3><a href="index.html">Spring is in the air</a></h3>
-                                        <p>The site has been migrated to use Java + Spring</p>
-                                    </li>
-                                    <li>
-                                        <span class="date">May <strong>13</strong></span>
-                                        <h3><a href="index.html">JavaScript rework</a></h3>
-                                        <p>After a rework of the Javascript browsing now should be more smooth.</p>
-                                    </li>
-                                    <li>
-                                        <span class="date">May <strong>6</strong></span>
-                                        <h3><a href="index.html">Website up and running</a></h3>
-                                        <p>The new website is now up and running.</p>
-                                    </li>
+                                    <c:forEach var="newsItem" items="${newsList}">
+                                        <li>
+                                            <span class="date">${newsItem.monthAsText} <strong>${newsItem.day}</strong></span>
+                                            <h3><a href="#">${newsItem.title}</a></h3>
+                                            <p>${newsItem.message}</p>
+                                        </li>
+                                    </c:forEach>
                                 </ul>
                             </section>
                         </div>
                     </div>
                     <div class="row">
                         <div class="8u">
-                            ${testMessage}
                             <!--<section>
                                 <header>
                                     <h2>Links</h2>
@@ -78,18 +70,23 @@
                             <li>
                                 <h3>Address</h3>
                                 <p>
-                                    Jozef van de Veldestraat 27<br/>
-                                    9270 Kalken, BELGIUM<br/>
+                                    ${personalia.name} ${personalia.sirName}<br />
+                                    ${personalia.streetAndNumber}<br/>
+                                    ${personalia.zip} ${personalia.city}, ${personalia.country}<br/>
                                 </p>
                             </li>
                             <li>
                                 <h3>Mail</h3>
-                                <p><a href="mailto:vaneeckhout.pieter@gmail.com">vaneeckhout.pieter@gmail.com</a>
+                                <p><a href="mailto:${personalia.email}">${personalia.email}</a>
                                 </p>
                             </li>
                             <li>
                                 <h3>Phone</h3>
-                                <p>+32 491 077 050</p>
+                                <p>${personalia.phone}</p>
+                            </li>
+                            <li>
+                                <h3>Mobile</h3>
+                                <p>${personalia.mobile}</p>
                             </li>
                         </ul>
                     </section>
@@ -100,7 +97,7 @@
                     <!-- Copyright -->
                     <div id="copyright">
                         <ul class="links">
-                            <li>&copy; Van Eeckhout Pieter; 2013</li>
+                            <li>${personalia.name} ${personalia.sirName}; 2014</li>
                             <li></li>
                             <li>Based on a de design from: <a href="http://html5up.net">HTML5 UP</a></li>
                         </ul>
