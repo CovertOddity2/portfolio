@@ -1,3 +1,19 @@
-<h2>Index</h2>
+<div id="main-wrapper">
+    <div class="container">
 
-<p>index body</p>
+        <!-- Start Banner -->
+        <div id="bannerDiv" class="row">
+            <div class="12u">
+
+                <!-- Banner -->
+                <section id="bannerSection">
+                    <span class="image image-full"><img src="./images/header.jpg" alt=""/></span>
+                    <header>
+                        <h2>A home on the web</h2>
+                        <span class="byline">Just me, myself and a story about code...</span>
+                    </header>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
