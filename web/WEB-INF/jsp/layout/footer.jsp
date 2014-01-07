@@ -11,12 +11,16 @@
                                     <h2>News and updates</h2>
                                 </header>
                                 <ul class="dates">
+                                    <c:set var="count" value="0" scope="page" />
                                     <c:forEach var="newsItem" items="${newsList}">
+                                        <c:if test="${count < 3}" >
                                         <li>
                                             <span class="date">${newsItem.monthAsText} <strong>${newsItem.day}</strong></span>
                                             <h3><a>${newsItem.title}</a></h3>
                                             <p>${newsItem.message}</p>
                                         </li>
+                                        </c:if>
+                                        <c:set var="count" value="${count + 1}" scope="page"/>
                                     </c:forEach>
                                 </ul>
                             </section>

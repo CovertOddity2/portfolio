@@ -40,9 +40,9 @@
                                         </header>
                                         <p>
                                             I write code, try to design software and sometimes I even dream of new application ideas.<br />
-                                            I graduated Applied Information Technology University College Ghent in 2013 with honors. Several 
-                                            studentjobs and personal projects convinced me that working on projects suits me more than continuing 
-                                            an academic career. This is why I currently am looking for a job
+                                            I graduated Applied Information Technology University College Ghent in 2013 with honors. Several internships,  
+                                            student jobs and personal projects convinced me that working on projects suits me more than continuing 
+                                            an academic career.
                                         </p>
                                     </section>
                                     <section>
@@ -67,9 +67,9 @@
                                                 former athlete. (trying to remove the former)
                                             </li>
                                         </ul>
-                                        <ul style="list-style: square;">
+                                        <ul style="list-style: none;">
                                             <li>
-                                                childhood passion: sports
+                                                childhood passion: sports and gaming
                                             </li>
                                             <li>
                                                 Arch-nemesis: kaki green
@@ -78,10 +78,13 @@
                                                 Favorite food: sushi
                                             </li>
                                             <li>
-                                                Most enjoyed vacation: the Philippines.
+                                                Most enjoyed vacation: the Philippines
                                             </li>
                                             <li>
                                                 Dream: hitchhike across the USA
+                                            </li>
+                                            <li>
+                                                Musical instruments: guitar and saxophone
                                             </li>
                                         </ul>
                                         </p>
@@ -91,19 +94,18 @@
                                             <h3>Skills and attitudes</h3>
                                         </header>
                                         <p>
-                                            I am curious by nature. I like to know how things function, why certain things happen. This interest is not limited to the computer science field,
-                                            it extends to some of the most mundane things in our everyday life. This has led to what I believe to be a good and solid general knowledge. 
-                                            This curious and inquisitive mind-set allows me to quickly learn new skills
+                                            I am curious by nature. I like to know how things function, why things happen. This interest is not limited to only the computer science field,
+                                            it extends to some of the most mundane things in our everyday life. This has led to a broad knowledge base and an open mind. 
+                                            This curious and inquisitive mind-set allows me to quickly learn new skills and adopt new practices.
                                         </p>
                                         <p>
-                                            I am an only child, so I am capable of working by myself. Luckily a large family and numerous sports clubs have made it so that I can
-                                            also work together in a group. A year as cub-scout leader and some limited experience as a teacher have shown me how to behave and give 
-                                            direction to group of people.
+                                            I am an only child, so I am used to working by myself. Luckily a large family and numerous sports clubs have made it so that I can
+                                            also work together in a group. A year as cub scout leader and some limited experience as a teacher have shown me how to behave in team and how
+                                            give direction and instructions to group of people.
                                         </p>
                                         <p>
-                                            One of the many advantages of still being young, is that I am capable of quickly learning new skills and adapting to new environments. 
-                                            For me it is no problem to have to work "strange" hours or weekends. This also means that I am willing to put in extra hours and long days
-                                            to resolve problematic situations.
+                                            One of the many advantages of still being young, is that for me it is no problem to have to work "strange" hours or weekends.
+                                            This also means that I am willing to put in extra hours and long days to resolve problematic situations.
                                         </p>
                                     </section>
                                     <!-- <section>
