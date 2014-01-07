@@ -10,7 +10,7 @@
                             <div class="4u">
                                 <!-- Sidebar -->
                                 <section class="box">
-                                    <a href="${linkedinURL}" class="image image-full"><img src="${profilepicture}" alt="profile picture" /></a>
+                                    <a href="${linkedin.url}" class="image image-full"><img src="${profilepicture}" alt="profile picture" /></a>
                                     <header>
                                         <h2>${personalia.name} ${personalia.sirName}</h2>
                                         <h4>${personalia.jobDescription}</h4>

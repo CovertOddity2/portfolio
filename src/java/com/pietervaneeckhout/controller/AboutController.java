@@ -48,6 +48,10 @@ public class AboutController {
         this.personaliaService = personaliaService;
     }
 
+    public void setImageService(ImageService imageService) {
+        this.imageService = imageService;
+    }
+    
     @RequestMapping(value = {"/about"})
     public ModelAndView showAbout() {
         aboutView = new ModelAndView("about");
