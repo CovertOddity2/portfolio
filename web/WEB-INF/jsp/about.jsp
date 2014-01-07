@@ -94,11 +94,13 @@
                                             I am curious by nature. I like to know how things function, why certain things happen. This interest is not limited to the computer science field,
                                             it extends to some of the most mundane things in our everyday life. This has led to what I believe to be a good and solid general knowledge. 
                                             This curious and inquisitive mind-set allows me to quickly learn new skills
-                                            <br />
+                                        </p>
+                                        <p>
                                             I am an only child, so I am capable of working by myself. Luckily a large family and numerous sports clubs have made it so that I can
                                             also work together in a group. A year as cub-scout leader and some limited experience as a teacher have shown me how to behave and give 
                                             direction to group of people.
-                                            <br />
+                                        </p>
+                                        <p>
                                             One of the many advantages of still being young, is that I am capable of quickly learning new skills and adapting to new environments. 
                                             For me it is no problem to have to work "strange" hours or weekends. This also means that I am willing to put in extra hours and long days
                                             to resolve problematic situations.
