@@ -88,7 +88,7 @@
                                     </section>
                                     <section>
                                         <header>
-                                            <h3>General skills and attitudes</h3>
+                                            <h3>Skills and attitudes</h3>
                                         </header>
                                         <p>
                                             I am curious by nature. I like to know how things function, why certain things happen. This interest is not limited to the computer science field,
