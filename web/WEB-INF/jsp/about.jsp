@@ -100,8 +100,8 @@
                                         </p>
                                         <p>
                                             I am an only child, so I am used to working by myself. Luckily a large family and numerous sports clubs have made it so that I can
-                                            also work together in a group. A year as cub scout leader and some limited experience as a teacher have shown me how to behave in team and how
-                                            give direction and instructions to group of people.
+                                            also work together in a group. A some years as gymnastics trainer and some limited experience as a teacher have shown me how to behave
+                                            in a team and how give direction and instructions to group of people.
                                         </p>
                                         <p>
                                             One of the many advantages of still being young, is that for me it is no problem to have to work "strange" hours or weekends.
