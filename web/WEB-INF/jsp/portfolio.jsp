@@ -14,7 +14,7 @@
                                 <div id="${portfolioItem.title}" class="4u">
                                     <section class="box">
                                         <a href="#" class="image image-full">
-                                            <img src="./images/${portfolioItem.imageLocation}" alt="${portfolioItem.title}"/>
+                                            <img src="${portfolioItem.imageLocation}" alt="${portfolioItem.title}"/>
                                         </a>
                                         <header>
                                             <h3>${portfolioItem.title}</h3>

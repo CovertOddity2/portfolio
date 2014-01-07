@@ -10,4 +10,6 @@ import java.util.List;
 public interface SocialMediaService {
     
     public List<SocialMediaItem> getSocialmediaItems();
+
+    public SocialMediaItem getByName(String name);
 }

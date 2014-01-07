@@ -14,6 +14,6 @@ public class PersonaliaServiceStaticItems implements PersonaliaService {
 
     @Override
     public Personalia getPersonalia() {
-        return Personalia.create("Pieter", "Van Eeckhout", "+32 93 67 78 10", "+32 49 17 70 50", "Jozef van de Veldestraat 27", "9270","Kalken" , "BELGIUM", "vaneeckhout.pieter@gmail.com");
+        return Personalia.create("Pieter", "Van Eeckhout", "+32 93 67 78 10", "+32 49 17 70 50", "Jozef van de Veldestraat 27", "9270","Kalken" , "BELGIUM", "vaneeckhout.pieter@gmail.com", "born to code");
     }   
 }

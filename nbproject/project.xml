@@ -25,6 +25,10 @@
             </web-module-libraries>
             <web-module-additional-libraries/>
             <source-roots>
+                <root id="src.css.dir"/>
+                <root id="src.images.dir"/>
+                <root id="src.js.dir"/>
+                <root id="src.pdf.dir"/>
                 <root id="src.dir"/>
             </source-roots>
             <test-roots>

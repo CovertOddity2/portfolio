@@ -6,8 +6,8 @@ package com.pietervaneeckhout.model;
  */
 public class Personalia {
 
-    public static Personalia create(String name, String sirName, String phone, String mobile, String StreetAndNumber, String zip, String city, String country, String email) {
-        return new Personalia(name, sirName, phone, mobile, StreetAndNumber, zip, city, country, email);
+    public static Personalia create(String name, String sirName, String phone, String mobile, String StreetAndNumber, String zip, String city, String country, String email, String jobDescription) {
+        return new Personalia(name, sirName, phone, mobile, StreetAndNumber, zip, city, country, email, jobDescription);
     }
     
     private String name;
@@ -19,8 +19,9 @@ public class Personalia {
     private String city;
     private String country;
     private String email;
+    private String jobDescription;
 
-    private Personalia(String name, String sirName, String phone, String mobile, String streetAndNumber, String zip, String city, String country, String email) {
+    private Personalia(String name, String sirName, String phone, String mobile, String streetAndNumber, String zip, String city, String country, String email, String jobDescription) {
         this.name = name;
         this.sirName = sirName;
         this.phone = phone;
@@ -30,6 +31,7 @@ public class Personalia {
         this.city = city;
         this.country = country;
         this.email = email;
+        this.jobDescription = jobDescription;
     }
 
     public String getName() {
@@ -103,6 +105,12 @@ public class Personalia {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
+
+    public String getJobDescription() {
+        return jobDescription;
+    }
+
+    public void setJobDescription(String jobDescription) {
+        this.jobDescription = jobDescription;
+    }    
 }

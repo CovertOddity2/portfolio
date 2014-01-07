@@ -38,7 +38,8 @@
     <bean id="personaliaService" class="com.pietervaneeckhout.service.staticitems.PersonaliaServiceStaticItems" />
     <bean id="portfolioService" class="com.pietervaneeckhout.service.staticitems.PortfolioServiceStaticItems" />
     <bean id="socialMediaService" class="com.pietervaneeckhout.service.staticitems.SocialMediaServiceStaticItems" />
-    <bean id="cvService" class="com.pietervaneeckhout.service.staticitems.CvServiceStaticItems" />
+    <bean id="aboutService" class="com.pietervaneeckhout.service.staticitems.AboutServiceStaticItems" />
+    <bean id="imageService" class="com.pietervaneeckhout.service.staticitems.ImageServiceStaticItems" />
     
     <!-- Delegate Controllers -->
     <bean id="footerDelegate" class="com.pietervaneeckhout.controller.delegates.FooterDelegate" />
