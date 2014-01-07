@@ -22,7 +22,7 @@
                                         </p>
                                     </header>
                                     <p></p>
-                                    <a href="#" class="button alt">Download curriculum vitae PDF</a>
+                                    <a href="${cvURL}" class="button alt">Download curriculum vitae PDF</a>
                                 </section>
                             </div>
                             <div class="8u skel-cell-important">

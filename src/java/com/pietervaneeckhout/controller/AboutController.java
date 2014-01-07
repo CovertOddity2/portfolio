@@ -56,6 +56,7 @@ public class AboutController {
         aboutView.addObject("personalia", personaliaService.getPersonalia());
         aboutView.addObject("profilepicture", imageService.getImageLocationByName("aboutProfilePicture"));
         aboutView.addObject("aboutHeader", imageService.getImageLocationByName("aboutHeader"));
+        aboutView.addObject("cvURL", "./pdf/CV_Dutch.pdf"); //TODO use aboutService to load the content
         
         headerDelegate.setActiveMenuIten(aboutView);
         footerDelegate.addFooterObjects(aboutView);
