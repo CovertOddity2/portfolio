@@ -8,3 +8,8 @@ Until a better solution is found this site will be the static html pages generat
 This is because I fear I might break some apache / tomcat configuration for 'production' sites running on the VPS
 
 Once a solution has been found, this branch will become the publicised site and development on the main will stop
+
+TODO
+----
+
+Change the implemented service to use a databased via the hibernate framework
