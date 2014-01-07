@@ -13,7 +13,7 @@
                             <c:forEach var="portfolioItem" items="${portfolioList}" >
                                 <div id="${portfolioItem.title}" class="4u">
                                     <section class="box">
-                                        <a href="#" class="image image-full">
+                                        <a class="image image-full">
                                             <img src="${portfolioItem.imageLocation}" alt="${portfolioItem.title}"/>
                                         </a>
                                         <header>

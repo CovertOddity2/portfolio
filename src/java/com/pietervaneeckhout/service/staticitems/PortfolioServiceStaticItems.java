@@ -44,7 +44,7 @@ public class PortfolioServiceStaticItems implements PortfolioService {
                 "Source", "https://github.com/pveeckhout/portfolio"));
 
         portfolioList.add(PortfolioItem.create(imageService.getImageLocationByName("portfolioWaypointConverter"), "Waypoint converter",
-                "This is a waypoint converter ii coded for my father. It converts coordinates generated "
+                "This is a waypoint converter I coded for my father. It converts coordinates generated "
                 + "by mapsource to a coordinate list file that can be used with our cars' build-in GPS system.<br />"
                 + " Development has stagnated as the program functions well enough for our use. "
                 + "If new feature requests or bugfixes are submitted, I would implement them as soon as possible",

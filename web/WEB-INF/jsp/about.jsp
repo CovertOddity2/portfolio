@@ -29,7 +29,7 @@
 
                                 <!-- Content -->
                                 <article class="box is-post">
-                                    <a href="#" class="image image-full"><img src="${aboutHeader}" alt="Philipines" /></a>
+                                    <a class="image image-full"><img src="${aboutHeader}" alt="Philipines" /></a>
                                     <header>
                                         <h2>What I'm all about</h2>
                                         <span class="byline">Coding, music and culture (and also sports)</span>

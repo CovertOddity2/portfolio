@@ -4,7 +4,7 @@
         <div class="row">
             <div class="12u">
                 <section id="header">
-                    <h1><a href="#">Pieter Van Eeckhout</a></h1>
+                    <h1><a>Pieter Van Eeckhout</a></h1>
                     <nav id="nav">
                         <ul>
                             <li id="index"

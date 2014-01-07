@@ -14,7 +14,7 @@
                                     <c:forEach var="newsItem" items="${newsList}">
                                         <li>
                                             <span class="date">${newsItem.monthAsText} <strong>${newsItem.day}</strong></span>
-                                            <h3><a href="#">${newsItem.title}</a></h3>
+                                            <h3><a>${newsItem.title}</a></h3>
                                             <p>${newsItem.message}</p>
                                         </li>
                                     </c:forEach>
