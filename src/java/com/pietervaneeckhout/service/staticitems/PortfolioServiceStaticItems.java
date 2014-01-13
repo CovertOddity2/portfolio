@@ -23,7 +23,7 @@ public class PortfolioServiceStaticItems implements PortfolioService {
     
     @Override
     public List<PortfolioItem> getPortfoiliItems() {
-        ArrayList<PortfolioItem> portfolioList = new ArrayList<PortfolioItem>();
+        ArrayList<PortfolioItem> portfolioList = new ArrayList<>();
 
         portfolioList.add(PortfolioItem.create(imageService.getImageLocationByName("portfolioBachPaper"), "Bachelor paper",
                 "This thesis was my final paper for graduating at University College Ghent. <br /><br />"

@@ -1,19 +1,40 @@
 package com.pietervaneeckhout.model;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
 
 /**
  *
  * @author pveeckhout
  */
-public class NewsItem implements Comparable<NewsItem>{
+@Entity
+@Table(name = "NewsItems")
+public class NewsItem implements Comparable<NewsItem>, Serializable {
 
     public static NewsItem create(DateTime date, String title, String message) {
         return new NewsItem(date, title, message);
     }
+
+    public NewsItem() {
+    }
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;   
+    @Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
+    @Column(name = "date", nullable = false)
     private DateTime date;
+    @Column(name = "title", nullable = false, length = 25)
     private String title;
+    @Column(name = "message", nullable = false, length = 255)
     private String message;
 
     private NewsItem(DateTime date, String title, String message) {
@@ -52,6 +73,14 @@ public class NewsItem implements Comparable<NewsItem>{
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

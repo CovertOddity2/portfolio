@@ -1,24 +1,48 @@
 package com.pietervaneeckhout.model;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author pveeckhout
  */
-public class Personalia {
+@Entity
+@Table(name = "Personalia")
+public class Personalia implements Serializable {
 
     public static Personalia create(String name, String sirName, String phone, String mobile, String StreetAndNumber, String zip, String city, String country, String email, String jobDescription) {
         return new Personalia(name, sirName, phone, mobile, StreetAndNumber, zip, city, country, email, jobDescription);
     }
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;
+    @Column(name = "name", nullable = false, length = 25)
     private String name;
+    @Column(name = "sirname", nullable = false, length = 25)
     private String sirName;
+    @Column(name = "phone", nullable = false, length = 25)
     private String phone;
+    @Column(name = "mobile", nullable = false, length = 25)
     private String mobile;
+    @Column(name = "street_and_number", nullable = false, length = 100)
     private String streetAndNumber;
+    @Column(name = "zip", nullable = false, length = 10)
     private String zip;
+    @Column(name = "city", nullable = false, length = 25)
     private String city;
+    @Column(name = "country", nullable = false, length = 25)
     private String country;
+    @Column(name = "email", nullable = false, length = 25)
     private String email;
+    @Column(name = "job", nullable = false, length = 25)
     private String jobDescription;
 
     private Personalia(String name, String sirName, String phone, String mobile, String streetAndNumber, String zip, String city, String country, String email, String jobDescription) {
@@ -34,6 +58,17 @@ public class Personalia {
         this.jobDescription = jobDescription;
     }
 
+    public Personalia() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public String getName() {
         return name;
     }

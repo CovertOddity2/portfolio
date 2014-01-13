@@ -1,19 +1,40 @@
 package com.pietervaneeckhout.model;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author pveeckhout
  */
-public class PortfolioItem {
+@Entity
+@Table(name = "PortfolioItems")
+public class PortfolioItem implements Serializable {
 
     public static PortfolioItem create(String imageLocation, String title, String content, String buttonText, String link) {
         return new PortfolioItem(imageLocation, title, content, buttonText, link);
     }
+
+    public PortfolioItem() {
+    }
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column(nullable = false, length = 25)
     private String imageLocation;
+    @Column(nullable = false, length = 25)
     private String title;
+    @Column(nullable = false, length = 512)
     private String content;
+    @Column(nullable = false, length = 25)
     private String buttonText;
+    @Column(nullable = false, length = 50)
     private String link;
 
     private PortfolioItem(String imageLocation, String title, String content, String buttonText, String link) {
@@ -24,6 +45,14 @@ public class PortfolioItem {
         this.link = link;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public String getImageLocation() {
         return imageLocation;
     }

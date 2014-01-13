@@ -16,7 +16,7 @@
     
     <mvc:annotation-driven />
      
-    <context:component-scan base-package="com.pietervaneeckhout.controller"/>
+    <context:component-scan base-package="com.pietervaneeckhout"/>
 
     <context:annotation-config/>
      

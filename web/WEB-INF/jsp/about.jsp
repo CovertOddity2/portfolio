@@ -40,7 +40,7 @@
                                         </header>
                                         <p>
                                             I write code, try to design software and sometimes I even dream of new application ideas.<br />
-                                            I graduated Applied Information Technology University College Ghent in 2013 with honors. Several internships,  
+                                            I graduated Applied Information Technology University College Ghent in 2013 with distinction. Several internships,  
                                             student jobs and personal projects convinced me that working on projects suits me more than continuing 
                                             an academic career.
                                         </p>
