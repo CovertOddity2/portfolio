@@ -15,7 +15,7 @@
         
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
         <spring.framework.version>4.0.0.RELEASE</spring.framework.version>
-        <hibernate.version>4.1.9.Final</hibernate.version>
+        <hibernate.version>4.2.8.Final</hibernate.version>
         <sl4j.version>1.7.5</sl4j.version>
         <tiles.version>3.0.0</tiles.version>
         <junit.version>4.11</junit.version>
@@ -23,14 +23,21 @@
     </properties>
     
     <build>
+        <sourceDirectory>src/java/</sourceDirectory>
+        <outputDirectory>target/</outputDirectory>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/conf/</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>2.5.1</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
@@ -39,9 +46,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.1.1</version>
+                <version>2.4</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <warSourceDirectory>web</warSourceDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -78,6 +86,16 @@
         ********************************************************************** -->
         <dependency>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
             <version>${spring.framework.version}</version>
         </dependency>
@@ -106,6 +124,16 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
             <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+            <version>3.2.0.Final</version>
         </dependency>
 
         <!-- ********************************************************************** 
@@ -181,6 +209,11 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
 
 
         <!-- ********************************************************************** 
@@ -198,7 +231,6 @@
             <artifactId>spring-test</artifactId>
             <version>${spring.framework.version}</version>
         </dependency>
-
     </dependencies>
 
 </project>
